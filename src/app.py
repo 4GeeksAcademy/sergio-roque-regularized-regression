@@ -6,7 +6,7 @@ engine = db_connect()
 import pandas as pd
 import numpy as np
 
-# ESCALADO
+# ESCALAMIENTO
 from sklearn.preprocessing import MinMaxScaler
 
 # SELECCION DE PARAMETROS
@@ -31,7 +31,7 @@ X_test = test_data.drop(["Heart disease_prevalence"], axis=1)
 y_test = test_data["Heart disease_prevalence"]
 
 # Escalado
-# instancio el escalador
+# Instancio el escalador
 scaler = MinMaxScaler()
 
 # Entreno el escalador con los datos de entrenamiento
